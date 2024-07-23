@@ -1,0 +1,966 @@
+{
+    "display": {
+      "breakpoint01": {
+        "scale": {
+          "steps": {
+            "value": "3",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "32",
+            "type": "other"
+          },
+          "peak": {
+            "value": "80",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({display.breakpoint01.fontSize.peak} / {display.breakpoint01.fontSize.base}, 1 / ({display.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "sm": {
+            "value": "round({display.breakpoint01.fontSize.base} * pow({display.breakpoint01.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({display.breakpoint01.fontSize.base} * pow({display.breakpoint01.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({display.breakpoint01.fontSize.base} * pow({display.breakpoint01.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.2",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.1",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({display.breakpoint01.lineHeight.peak} / {display.breakpoint01.lineHeight.base}, 1 / ({display.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "sm": {
+            "value": "round({display.breakpoint01.lineHeight.base} * pow({display.breakpoint01.lineHeight.ratio}, 0) * {display.breakpoint01.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({display.breakpoint01.lineHeight.base} * pow({display.breakpoint01.lineHeight.ratio}, 1) * {display.breakpoint01.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({display.breakpoint01.lineHeight.base} * pow({display.breakpoint01.lineHeight.ratio}, 2) * {display.breakpoint01.fontSize.lg})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "lg": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint01.fontSize.lg}",
+              "lineHeight": "{display.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint01.fontSize.md}",
+              "lineHeight": "{display.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint01.fontSize.sm}",
+              "lineHeight": "{display.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "lg": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint01.fontSize.lg}",
+              "lineHeight": "{display.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint01.fontSize.md}",
+              "lineHeight": "{display.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint01.fontSize.sm}",
+              "lineHeight": "{display.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "breakpoint02": {
+        "scale": {
+          "steps": {
+            "value": "3",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "40",
+            "type": "other"
+          },
+          "peak": {
+            "value": "96",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({display.breakpoint02.fontSize.peak} / {display.breakpoint02.fontSize.base}, 1 / ({display.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "sm": {
+            "value": "round({display.breakpoint02.fontSize.base} * pow({display.breakpoint02.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({display.breakpoint02.fontSize.base} * pow({display.breakpoint02.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({display.breakpoint02.fontSize.base} * pow({display.breakpoint02.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.2",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.1",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({display.breakpoint02.lineHeight.peak} / {display.breakpoint02.lineHeight.base}, 1 / ({display.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "sm": {
+            "value": "round({display.breakpoint02.lineHeight.base} * pow({display.breakpoint02.lineHeight.ratio}, 0) * {display.breakpoint02.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({display.breakpoint02.lineHeight.base} * pow({display.breakpoint02.lineHeight.ratio}, 1) * {display.breakpoint02.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({display.breakpoint02.lineHeight.base} * pow({display.breakpoint02.lineHeight.ratio}, 2) * {display.breakpoint02.fontSize.lg})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "lg": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint02.fontSize.lg}",
+              "lineHeight": "{display.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint02.fontSize.md}",
+              "lineHeight": "{display.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.regular}",
+              "fontSize": "{display.breakpoint02.fontSize.sm}",
+              "lineHeight": "{display.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "lg": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint02.fontSize.lg}",
+              "lineHeight": "{display.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint02.fontSize.md}",
+              "lineHeight": "{display.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{display.fontfamily}",
+              "fontWeight": "{display.weight.heavy}",
+              "fontSize": "{display.breakpoint02.fontSize.sm}",
+              "lineHeight": "{display.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "fontfamily": {
+        "value": "{heading.fontfamily}",
+        "type": "fontFamilies"
+      },
+      "weight": {
+        "regular": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "heavy": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      }
+    },
+    "heading": {
+      "breakpoint01": {
+        "scale": {
+          "steps": {
+            "value": "6",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "24",
+            "type": "other"
+          },
+          "peak": {
+            "value": "65",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({heading.breakpoint01.fontSize.peak} / {heading.breakpoint01.fontSize.base}, 1 / ({heading.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 3))",
+            "type": "fontSizes"
+          },
+          "xl": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 4))",
+            "type": "fontSizes"
+          },
+          "xxl": {
+            "value": "round({heading.breakpoint01.fontSize.base} * pow({heading.breakpoint01.fontSize.ratio}, 5))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.5",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.1",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({heading.breakpoint01.lineHeight.peak} / {heading.breakpoint01.lineHeight.base}, 1 / ({heading.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 0) * {heading.breakpoint01.fontSize.xs})",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 1) * {heading.breakpoint01.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 2) * {heading.breakpoint01.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 3) * {heading.breakpoint01.fontSize.lg})",
+            "type": "lineHeights"
+          },
+          "xl": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 4) * {heading.breakpoint01.fontSize.xl})",
+            "type": "lineHeights"
+          },
+          "xxl": {
+            "value": "round({heading.breakpoint01.lineHeight.base} * pow({heading.breakpoint01.lineHeight.ratio}, 5) * {heading.breakpoint01.fontSize.xxl})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "xxl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.xxl}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xxl}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.xl}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xl}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.lg}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.md}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.sm}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint01.fontSize.xs}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "xxl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.xxl}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xxl}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.xl}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xl}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.lg}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.md}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.sm}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint01.fontSize.xs}",
+              "lineHeight": "{heading.breakpoint01.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "breakpoint02": {
+        "scale": {
+          "steps": {
+            "value": "6",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "20",
+            "type": "other"
+          },
+          "peak": {
+            "value": "56",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({heading.breakpoint02.fontSize.peak} / {heading.breakpoint02.fontSize.base}, 1 / ({heading.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 3))",
+            "type": "fontSizes"
+          },
+          "xl": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 4))",
+            "type": "fontSizes"
+          },
+          "xxl": {
+            "value": "round({heading.breakpoint02.fontSize.base} * pow({heading.breakpoint02.fontSize.ratio}, 5))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.4",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.2",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({heading.breakpoint02.lineHeight.peak} / {heading.breakpoint02.lineHeight.base}, 1 / ({heading.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 0) * {heading.breakpoint02.fontSize.xs})",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 1) * {heading.breakpoint02.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 2) * {heading.breakpoint02.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 3) * {heading.breakpoint02.fontSize.lg})",
+            "type": "lineHeights"
+          },
+          "xl": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 4) * {heading.breakpoint02.fontSize.xl})",
+            "type": "lineHeights"
+          },
+          "xxl": {
+            "value": "round({heading.breakpoint02.lineHeight.base} * pow({heading.breakpoint02.lineHeight.ratio}, 5) * {heading.breakpoint02.fontSize.xxl})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "xxl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.xxl}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xxl}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.xl}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xl}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.lg}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.md}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.sm}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.regular}",
+              "fontSize": "{heading.breakpoint02.fontSize.xs}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "xxl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.xxl}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xxl}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.xl}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xl}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.lg}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.md}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.sm}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{heading.fontfamily}",
+              "fontWeight": "{heading.weight.heavy}",
+              "fontSize": "{heading.breakpoint02.fontSize.xs}",
+              "lineHeight": "{heading.breakpoint02.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "fontfamily": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      },
+      "weight": {
+        "regular": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "heavy": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      }
+    },
+    "bodycopy": {
+      "breakpoint01": {
+        "scale": {
+          "steps": {
+            "value": "4",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "12",
+            "type": "other"
+          },
+          "peak": {
+            "value": "18",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({bodycopy.breakpoint01.fontSize.peak} / {bodycopy.breakpoint01.fontSize.base}, 1 / ({bodycopy.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({bodycopy.breakpoint01.fontSize.base} * pow({bodycopy.breakpoint01.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "round({bodycopy.breakpoint01.fontSize.base} * pow({bodycopy.breakpoint01.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({bodycopy.breakpoint01.fontSize.base} * pow({bodycopy.breakpoint01.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({bodycopy.breakpoint01.fontSize.base} * pow({bodycopy.breakpoint01.fontSize.ratio}, 3))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.5",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.3",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({bodycopy.breakpoint01.lineHeight.peak} / {bodycopy.breakpoint01.lineHeight.base}, 1 / ({bodycopy.breakpoint01.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({bodycopy.breakpoint01.lineHeight.base} * pow({bodycopy.breakpoint01.lineHeight.ratio}, 0) * {bodycopy.breakpoint01.fontSize.xs})",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "round({bodycopy.breakpoint01.lineHeight.base} * pow({bodycopy.breakpoint01.lineHeight.ratio}, 1) * {bodycopy.breakpoint01.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({bodycopy.breakpoint01.lineHeight.base} * pow({bodycopy.breakpoint01.lineHeight.ratio}, 2) * {bodycopy.breakpoint01.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({bodycopy.breakpoint01.lineHeight.base} * pow({bodycopy.breakpoint01.lineHeight.ratio}, 3) * {bodycopy.breakpoint01.fontSize.lg})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "lg": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.lg}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.md}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.sm}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.xs}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "lg": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.lg}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.md}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.sm}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint01.fontSize.xs}",
+              "lineHeight": "{bodycopy.breakpoint01.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "breakpoint02": {
+        "scale": {
+          "steps": {
+            "value": "4",
+            "type": "other"
+          }
+        },
+        "fontSize": {
+          "base": {
+            "value": "14",
+            "type": "other"
+          },
+          "peak": {
+            "value": "22",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({bodycopy.breakpoint02.fontSize.peak} / {bodycopy.breakpoint02.fontSize.base}, 1 / ({bodycopy.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({bodycopy.breakpoint02.fontSize.base} * pow({bodycopy.breakpoint02.fontSize.ratio}, 0))",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "round({bodycopy.breakpoint02.fontSize.base} * pow({bodycopy.breakpoint02.fontSize.ratio}, 1))",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "round({bodycopy.breakpoint02.fontSize.base} * pow({bodycopy.breakpoint02.fontSize.ratio}, 2))",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "round({bodycopy.breakpoint02.fontSize.base} * pow({bodycopy.breakpoint02.fontSize.ratio}, 3))",
+            "type": "fontSizes"
+          }
+        },
+        "lineHeight": {
+          "base": {
+            "value": "1.5",
+            "type": "other"
+          },
+          "peak": {
+            "value": "1.3",
+            "type": "other"
+          },
+          "ratio": {
+            "value": "pow({bodycopy.breakpoint02.lineHeight.peak} / {bodycopy.breakpoint02.lineHeight.base}, 1 / ({bodycopy.breakpoint02.scale.steps} - 1))",
+            "type": "other"
+          },
+          "xs": {
+            "value": "round({bodycopy.breakpoint02.lineHeight.base} * pow({bodycopy.breakpoint02.lineHeight.ratio}, 0) * {bodycopy.breakpoint02.fontSize.xs})",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "round({bodycopy.breakpoint02.lineHeight.base} * pow({bodycopy.breakpoint02.lineHeight.ratio}, 1) * {bodycopy.breakpoint02.fontSize.sm})",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "round({bodycopy.breakpoint02.lineHeight.base} * pow({bodycopy.breakpoint02.lineHeight.ratio}, 2) * {bodycopy.breakpoint02.fontSize.md})",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "round({bodycopy.breakpoint02.lineHeight.base} * pow({bodycopy.breakpoint02.lineHeight.ratio}, 3) * {bodycopy.breakpoint02.fontSize.lg})",
+            "type": "lineHeights"
+          }
+        },
+        "regular": {
+          "lg": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.lg}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.md}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.sm}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.regular}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.xs}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        },
+        "heavy": {
+          "lg": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.lg}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.lg}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.md}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.md}"
+            },
+            "type": "typography"
+          },
+          "sm": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.sm}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.sm}"
+            },
+            "type": "typography"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{bodycopy.fontfamily}",
+              "fontWeight": "{bodycopy.weight.heavy}",
+              "fontSize": "{bodycopy.breakpoint02.fontSize.xs}",
+              "lineHeight": "{bodycopy.breakpoint02.lineHeight.xs}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "fontfamily": {
+        "value": "Arial",
+        "type": "fontFamilies"
+      },
+      "weight": {
+        "regular": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "heavy": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      }
+    }
+  }
