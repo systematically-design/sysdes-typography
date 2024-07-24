@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+
+
+  /* These are the customization variables for breakpoint 01 */
+  --display-scale-steps: 4;
+  --display-fontSize-base: 28;
+  --display-fontSize-peak: 48;
+  --display-fontSize-ratio: calc(pow(var(--display-fontSize-peak) / var(--display-fontSize-base), 1 / (var(--display-scale-steps) - 1)));
+  --display-lineHeight-base: 1.2;
+  --display-lineHeight-peak: 1.1;
+  --display-lineHeight-ratio: calc(pow(var(--display-lineHeight-peak) / var(--display-lineHeight-base), 1 / (var(--display-scale-steps) - 1)));
+
+  --display-font-family: 'Inter', sans-serif;
+  --display-fontWeight-regular: 400;
+  --display-fontWeight-heavy: 700;
+  --display-letterSpacing: 0%;
+  --display-textCase: uppercase;
+
+
+
+  --heading-scale-steps: 6;
+  --heading-fontSize-base: 16;
+  --heading-fontSize-peak: 36;
+  --heading-fontSize-ratio: calc(pow(var(--heading-fontSize-peak) / var(--heading-fontSize-base), 1 / (var(--heading-scale-steps) - 1)));
+  --heading-lineHeight-base: 1.4;
+  --heading-lineHeight-peak: 1.1;
+  --heading-lineHeight-ratio: calc(pow(var(--heading-lineHeight-peak) / var(--heading-lineHeight-base), 1 / (var(--heading-scale-steps) - 1)));
+
+  --heading-font-family: 'Roboto', sans-serif;
+  --heading-fontWeight-regular: 400;
+  --heading-fontWeight-heavy: 700;
+  --heading-letterSpacing: 0%;
+  --heading-textCase: none;
+
+
+
+  --bodycopy-scale-steps: 4;
+  --bodycopy-fontSize-base: 12;
+  --bodycopy-fontSize-peak: 18;
+  --bodycopy-fontSize-ratio: calc(pow(var(--bodycopy-fontSize-peak) / var(--bodycopy-fontSize-base), 1 / (var(--bodycopy-scale-steps) - 1)));
+  --bodycopy-lineHeight-base: 1.7;
+  --bodycopy-lineHeight-peak: 1.5;
+  --bodycopy-lineHeight-ratio: calc(pow(var(--bodycopy-lineHeight-peak) / var(--bodycopy-lineHeight-base), 1 / (var(--bodycopy-scale-steps) - 1)));
+
+  --bodycopy-font-family: 'Open Sans', sans-serif;
+  --bodycopy-fontWeight-regular: 400;
+  --bodycopy-fontWeight-heavy: 700;
+  --bodycopy-letterSpacing: 0%;
+  --bodycopy-textCase: none;
+
+
+
+
+
+
+
+
+  /* --to-rem: 0.0625; 1/16 -- assuming rem is  */
+  --to-rem: calc(1 / 16);
+
+
+
+  --display-fontSize-sm: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --display-fontSize-md: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --display-fontSize-lg: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+
+
+
+  --display-lineHeight-sm: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 1) * 100%);
+  --display-lineHeight-md: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 2) * 100%);
+  --display-lineHeight-lg: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 3) * 100%);
+
+
+  --heading-fontSize-xs: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 0) * var(--to-rem) * 1rem);
+  --heading-fontSize-sm: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --heading-fontSize-md: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --heading-fontSize-lg: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+  --heading-fontSize-xl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 4) * var(--to-rem) * 1rem);
+  --heading-fontSize-xxl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 5) * var(--to-rem) * 1rem);
+
+  --heading-lineHeight-xs: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 0) * 100%);
+  --heading-lineHeight-sm: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 1) * 100%);
+  --heading-lineHeight-md: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 2) * 100%);
+  --heading-lineHeight-lg: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 3) * 100%);
+  --heading-lineHeight-xl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 4) * 100%);
+  --heading-lineHeight-xxl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 5) * 100%);
+
+
+  --bodycopy-fontSize-xs: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 0) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-sm: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-md: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-lg: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+
+  --bodycopy-lineHeight-xs: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 0) * 100%);
+  --bodycopy-lineHeight-sm: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 1) * 100%);
+  --bodycopy-lineHeight-md: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 2) * 100%);
+  --bodycopy-lineHeight-lg: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 3) * 100%);
+
+
+  @media (min-width: 999px) {
+
+    /* These are the customization variable for breakpoint 02 */
+    --display-scale-steps: 4;
+    --display-fontSize-base: 36;
+    --display-fontSize-peak: 72;
+    --display-fontSize-ratio: calc(pow(var(--display-fontSize-peak) / var(--display-fontSize-base), 1 / (var(--display-scale-steps) - 1)));
+    --display-lineHeight-base: 1.2;
+    --display-lineHeight-peak: 1.1;
+    --display-lineHeight-ratio: calc(pow(var(--display-lineHeight-peak) / var(--display-lineHeight-base), 1 / (var(--display-scale-steps) - 1)));
+
+
+
+    --heading-scale-steps: 6;
+    --heading-fontSize-base: 18;
+    --heading-fontSize-peak: 48;
+    --heading-fontSize-ratio: calc(pow(var(--heading-fontSize-peak) / var(--heading-fontSize-base), 1 / (var(--heading-scale-steps) - 1)));
+    --heading-lineHeight-base: 1.4;
+    --heading-lineHeight-peak: 1.1;
+    --heading-lineHeight-ratio: calc(pow(var(--heading-lineHeight-peak) / var(--heading-lineHeight-base), 1 / (var(--heading-scale-steps) - 1)));
+  }
+
+}
+
+/*****************/
+/***** STYLES *****/
+/*****************/
+
+/* display styles */
+.display {
+  font-family: var(--display-font-family);
+  font-weight: var(--display-fontWeight-regular);
+  letter-spacing: var(--display-letterSpacing);
+  text-transform: var(--display-textCase);
+
+  /* weight */
+  &.regular {
+    font-weight: var(--display-fontWeight-regular);
+  }
+  .regular {
+    font-weight: var(--display-fontWeight-regular);
+  }
+  &.heavy {
+    font-weight: var(--display-fontWeight-heavy);
+  }
+  .heavy {
+    font-weight: var(--display-fontWeight-heavy);
+  }
+  /* sizes */
+  &.sm {
+    font-size: var(--display-fontSize-sm);
+    line-height: var(--display-lineHeight-sm);
+  }
+  &.md {
+    font-size: var(--display-fontSize-md);
+    line-height: var(--display-lineHeight-md);
+  }
+  &.lg {
+    font-size: var(--display-fontSize-lg);
+    line-height: var(--display-lineHeight-lg);
+  }
+
+
+}
+
+
+
+
+
+/* heading styles */
+.heading {
+  font-family: var(--heading-font-family);
+  letter-spacing: var(--heading-letterSpacing);
+  text-transform: var(--heading-textCase);
+
+  /* weight */
+  font-weight: var(--heading-fontWeight-regular);
+
+  &.regular {
+    font-weight: var(--heading-fontWeight-regular);
+  }
+
+  &.heavy {
+    font-weight: var(--heading-fontWeight-heavy);
+  }
+
+  .regular {
+    font-weight: var(--heading-fontWeight-regular);
+  }
+
+  .heavy {
+    font-weight: var(--heading-fontWeight-heavy);
+  }
+
+  /* sizes */
+  &.xs {
+    font-size: var(--heading-fontSize-xs);
+    line-height: var(--heading-lineHeight-xs);
+
+  }
+
+  &.sm {
+    font-size: var(--heading-fontSize-sm);
+    line-height: var(--heading-lineHeight-sm);
+  }
+
+  &.md {
+    font-size: var(--heading-fontSize-md);
+    line-height: var(--heading-lineHeight-md);
+
+  }
+
+  &.lg {
+    font-size: var(--heading-fontSize-lg);
+    line-height: var(--heading-lineHeight-lg);
+  }
+
+  &.xl {
+    font-size: var(--heading-fontSize-xl);
+    line-height: var(--heading-lineHeight-xl);
+
+  }
+
+  &.xxl {
+    font-size: var(--heading-fontSize-xxl);
+    line-height: var(--heading-lineHeight-xxl);
+  }
+
+}
+
+
+/* bodycopy styles */
+
+.bodycopy {
+  /* weight */
+  font-family: var(--bodycopy-font-family);
+  font-weight: var(--bodycopy-fontWeight-regular);
+  letter-spacing: var(--bodycopy-letterSpacing);
+  text-transform: var(--bodycopy-textCase);
+
+  &.regular {
+    font-weight: var(--bodycopy-fontWeight-regular);
+  }
+
+  .regular {
+    font-weight: var(--bodycopy-fontWeight-regular);
+  }
+
+  &.heavy {
+    font-weight: var(--bodycopy-fontWeight-heavy);
+  }
+
+  .heavy {
+    font-weight: var(--bodycopy-fontWeight-heavy);
+  }
+
+
+  /* sizes */
+  &.xs {
+    font-size: var(--bodycopy-fontSize-xs);
+    line-height: var(--bodycopy-lineHeight-xs);
+  }
+
+  &.sm {
+    font-size: var(--bodycopy-fontSize-sm);
+    line-height: var(--bodycopy-lineHeight-sm);
+
+  }
+
+  &.md {
+    font-size: var(--bodycopy-fontSize-md);
+    line-height: var(--bodycopy-lineHeight-md);
+  }
+
+  &.lg {
+    font-size: var(--bodycopy-fontSize-lg);
+    line-height: var(--bodycopy-lineHeight-lg);
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+

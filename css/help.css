@@ -2,9 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 
-/* Your additional CSS code here */
-
-/* reset removing padding and margin from all text elements */
+/* just some styles related to presenting the preview page */
 * {
     margin: 0;
 }
@@ -16,9 +14,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 100px;
-}
-p {
-    /* padding: 10px 20px 20px 20px; */
+    max-width: 1000px;
+    margin-inline: auto;
 }
 
 .notation {
