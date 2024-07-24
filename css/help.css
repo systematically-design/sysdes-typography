@@ -1,0 +1,44 @@
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+
+/* Your additional CSS code here */
+
+/* reset removing padding and margin from all text elements */
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px;
+}
+p {
+    /* padding: 10px 20px 20px 20px; */
+}
+
+.notation {
+    /* padding: 20px 20px 10px 20px; */
+    color: blue;
+    display: inline-block;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+hr {
+    margin: 60px 0;
+    border: 1px solid #0b07df;
+}
+
+
+.notation + p {
+    margin-top: 20px; 
+  }
+
+p + .notation {
+    margin-top: 60px; 
+  }
