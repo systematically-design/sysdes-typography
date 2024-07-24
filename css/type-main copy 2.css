@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
 :root {
-
+  /* --to-rem: 0.0625; 1/16 -- assuming rem is  */
+  --to-rem: calc(1 / 16);
 
   /* These are the customization variables for breakpoint 01 */
+  /* Display customization variables */
   --display-scale-steps: 4;
   --display-fontSize-base: 28;
   --display-fontSize-peak: 48;
@@ -19,7 +19,7 @@
   --display-textCase: uppercase;
 
 
-
+/* Heading customization variables */
   --heading-scale-steps: 6;
   --heading-fontSize-base: 16;
   --heading-fontSize-peak: 36;
@@ -35,7 +35,7 @@
   --heading-textCase: none;
 
 
-
+/* Heading customization variables */
   --bodycopy-scale-steps: 4;
   --bodycopy-fontSize-base: 12;
   --bodycopy-fontSize-peak: 18;
@@ -50,53 +50,6 @@
   --bodycopy-letterSpacing: 0%;
   --bodycopy-textCase: none;
 
-
-
-
-
-
-
-
-  /* --to-rem: 0.0625; 1/16 -- assuming rem is  */
-  --to-rem: calc(1 / 16);
-
-
-
-  --display-fontSize-sm: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 1) * var(--to-rem) * 1rem);
-  --display-fontSize-md: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 2) * var(--to-rem) * 1rem);
-  --display-fontSize-lg: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 3) * var(--to-rem) * 1rem);
-
-
-
-  --display-lineHeight-sm: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 1) * 100%);
-  --display-lineHeight-md: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 2) * 100%);
-  --display-lineHeight-lg: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 3) * 100%);
-
-
-  --heading-fontSize-xs: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 0) * var(--to-rem) * 1rem);
-  --heading-fontSize-sm: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 1) * var(--to-rem) * 1rem);
-  --heading-fontSize-md: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 2) * var(--to-rem) * 1rem);
-  --heading-fontSize-lg: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 3) * var(--to-rem) * 1rem);
-  --heading-fontSize-xl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 4) * var(--to-rem) * 1rem);
-  --heading-fontSize-xxl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 5) * var(--to-rem) * 1rem);
-
-  --heading-lineHeight-xs: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 0) * 100%);
-  --heading-lineHeight-sm: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 1) * 100%);
-  --heading-lineHeight-md: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 2) * 100%);
-  --heading-lineHeight-lg: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 3) * 100%);
-  --heading-lineHeight-xl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 4) * 100%);
-  --heading-lineHeight-xxl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 5) * 100%);
-
-
-  --bodycopy-fontSize-xs: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 0) * var(--to-rem) * 1rem);
-  --bodycopy-fontSize-sm: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 1) * var(--to-rem) * 1rem);
-  --bodycopy-fontSize-md: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 2) * var(--to-rem) * 1rem);
-  --bodycopy-fontSize-lg: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 3) * var(--to-rem) * 1rem);
-
-  --bodycopy-lineHeight-xs: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 0) * 100%);
-  --bodycopy-lineHeight-sm: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 1) * 100%);
-  --bodycopy-lineHeight-md: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 2) * 100%);
-  --bodycopy-lineHeight-lg: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 3) * 100%);
 
 
   @media (min-width: 999px) {
@@ -120,6 +73,50 @@
     --heading-lineHeight-peak: 1.1;
     --heading-lineHeight-ratio: calc(pow(var(--heading-lineHeight-peak) / var(--heading-lineHeight-base), 1 / (var(--heading-scale-steps) - 1)));
   }
+
+
+
+
+  
+
+
+  /* calculating sizes for display */
+  --display-fontSize-sm: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --display-fontSize-md: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --display-fontSize-lg: calc(var(--display-fontSize-base) * pow(var(--display-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+/* calculating lineheights for display */
+  --display-lineHeight-sm: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 1) * 100%);
+  --display-lineHeight-md: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 2) * 100%);
+  --display-lineHeight-lg: calc(var(--display-lineHeight-base) * pow(var(--display-lineHeight-ratio), 3) * 100%);
+
+  /* calculating sizes for heading */
+  --heading-fontSize-xs: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 0) * var(--to-rem) * 1rem);
+  --heading-fontSize-sm: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --heading-fontSize-md: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --heading-fontSize-lg: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+  --heading-fontSize-xl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 4) * var(--to-rem) * 1rem);
+  --heading-fontSize-xxl: calc(var(--heading-fontSize-base) * pow(var(--heading-fontSize-ratio), 5) * var(--to-rem) * 1rem);
+/* calculating lineheights for heading */
+  --heading-lineHeight-xs: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 0) * 100%);
+  --heading-lineHeight-sm: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 1) * 100%);
+  --heading-lineHeight-md: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 2) * 100%);
+  --heading-lineHeight-lg: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 3) * 100%);
+  --heading-lineHeight-xl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 4) * 100%);
+  --heading-lineHeight-xxl: calc(var(--heading-lineHeight-base) * pow(var(--heading-lineHeight-ratio), 5) * 100%);
+
+  /* calculating sizes for bodycopy */
+  --bodycopy-fontSize-xs: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 0) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-sm: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 1) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-md: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 2) * var(--to-rem) * 1rem);
+  --bodycopy-fontSize-lg: calc(var(--bodycopy-fontSize-base) * pow(var(--bodycopy-fontSize-ratio), 3) * var(--to-rem) * 1rem);
+/* calculating lineheights for bodycopy */
+  --bodycopy-lineHeight-xs: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 0) * 100%);
+  --bodycopy-lineHeight-sm: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 1) * 100%);
+  --bodycopy-lineHeight-md: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 2) * 100%);
+  --bodycopy-lineHeight-lg: calc(var(--bodycopy-lineHeight-base) * pow(var(--bodycopy-lineHeight-ratio), 3) * 100%);
+
+
+  
 
 }
 
