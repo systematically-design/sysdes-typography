@@ -1,0 +1,62 @@
+{
+  "display": {
+    "fontFamily": {
+      "value": "{heading.fontFamily}",
+      "type": "text"
+    },
+    "weight": {
+      "default": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "heavy": {
+        "value": "Bold",
+        "type": "text"
+      }
+    },
+    "letterSpacing": {
+      "value": "0",
+      "type": "number"
+    }
+  },
+  "heading": {
+    "fontFamily": {
+      "value": "Noto Sans",
+      "type": "text"
+    },
+    "weight": {
+      "default": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "heavy": {
+        "value": "Bold",
+        "type": "text"
+      }
+    },
+    "letterSpacing": {
+      "value": "0",
+      "type": "number"
+    }
+  },
+  "bodycopy": {
+    "fontFamily": {
+      "value": "Open Sans",
+      "type": "text"
+    },
+    "weight": {
+      "default": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "heavy": {
+        "value": "Bold",
+        "type": "text"
+      }
+    },
+    "letterSpacing": {
+      "value": "0",
+      "type": "number"
+    }
+  }
+}

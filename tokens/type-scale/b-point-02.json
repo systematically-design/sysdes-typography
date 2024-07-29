@@ -1,0 +1,72 @@
+{
+  "@media": {
+    "value": "654",
+    "type": "other"
+  },
+  "display": {
+    "fontSize": {
+      "base": {
+        "value": "{heading.fontSize.base}*{displayHeadingRatio}",
+        "type": "other"
+      },
+      "peak": {
+        "value": "{heading.fontSize.peak}*{displayHeadingRatio}",
+        "type": "other"
+      }
+    },
+    "lineHeight": {
+      "base": {
+        "value": "1.3",
+        "type": "other"
+      },
+      "peak": {
+        "value": "1.1",
+        "type": "other"
+      }
+    }
+  },
+  "heading": {
+    "fontSize": {
+      "base": {
+        "value": "24",
+        "type": "other"
+      },
+      "peak": {
+        "value": "72",
+        "type": "other"
+      }
+    },
+    "lineHeight": {
+      "base": {
+        "value": "1.4",
+        "type": "other"
+      },
+      "peak": {
+        "value": "1.3",
+        "type": "other"
+      }
+    }
+  },
+  "bodycopy": {
+    "fontSize": {
+      "base": {
+        "value": "14",
+        "type": "other"
+      },
+      "peak": {
+        "value": "24",
+        "type": "other"
+      }
+    },
+    "lineHeight": {
+      "base": {
+        "value": "1.6",
+        "type": "other"
+      },
+      "peak": {
+        "value": "1.4",
+        "type": "other"
+      }
+    }
+  }
+}
