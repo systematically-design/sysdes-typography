@@ -1,23 +1,9 @@
 {
-  "toRem": {
-    "value": "1/16",
-    "type": "other"
-  },
   "@media": {
-    "value": "0",
-    "type": "other"
-  },
-  "displayHeadingRatio": {
-    "value": "1.5",
+    "value": "000",
     "type": "other"
   },
   "display": {
-    "scale": {
-      "steps": {
-        "value": "5",
-        "type": "other"
-      }
-    },
     "fontSize": {
       "base": {
         "value": "{heading.fontSize.base}*{displayHeadingRatio}",
@@ -26,74 +12,20 @@
       "peak": {
         "value": "{heading.fontSize.peak}*{displayHeadingRatio}",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({display.fontSize.peak} / {display.fontSize.base}, 1 / ({display.scale.steps} - 1))",
-        "type": "other"
-      },
-      "sm": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 0)/4)* 4",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 1)/4)* 4",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 2)/4)* 4",
-        "type": "number"
-      },
-      "xl": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 3)/4)* 4",
-        "type": "number"
-      },
-      "xxl": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 4)/4)* 4",
-        "type": "number"
       }
     },
     "lineHeight": {
       "base": {
-        "value": "1.1",
+        "value": "1.4",
         "type": "other"
       },
       "peak": {
-        "value": "1",
+        "value": "1.3",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({display.lineHeight.peak} / {display.lineHeight.base}, 1 / ({display.scale.steps} - 1))",
-        "type": "other"
-      },
-      "sm": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 0) * {display.fontSize.sm}/4)* 4",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 1) * {display.fontSize.md}/4)* 4",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 2) * {display.fontSize.lg}/4)* 4",
-        "type": "number"
-      },
-      "xl": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 3) * {display.fontSize.xl}/4)* 4",
-        "type": "number"
-      },
-      "xxl": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 4) * {display.fontSize.xxl}/4)* 4",
-        "type": "number"
       }
     }
   },
   "heading": {
-    "scale": {
-      "steps": {
-        "value": "6",
-        "type": "other"
-      }
-    },
     "fontSize": {
       "base": {
         "value": "16",
@@ -102,110 +34,28 @@
       "peak": {
         "value": "48",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({heading.fontSize.peak} / {heading.fontSize.base}, 1 / ({heading.scale.steps} - 1))",
-        "type": "other"
-      },
-      "xs": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 0)/4)* 4",
-        "type": "number"
-      },
-      "sm": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 1)/4)* 4",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 2)/4)* 4",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 3)/4)* 4",
-        "type": "number"
-      },
-      "xl": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 4)/4)* 4",
-        "type": "number"
-      },
-      "xxl": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 5)/4)* 4",
-        "type": "number"
       }
     },
     "lineHeight": {
       "base": {
-        "value": "1.3",
+        "value": "1.5",
         "type": "other"
       },
       "peak": {
-        "value": "1",
+        "value": "1.4",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({heading.lineHeight.peak} / {heading.lineHeight.base}, 1 / ({heading.scale.steps} - 1))",
-        "type": "other"
-      },
-      "xs": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 0) * {heading.fontSize.xs}/4)* 4",
-        "type": "number"
-      },
-      "sm": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 1) * {heading.fontSize.sm}/4)* 4",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 2) * {heading.fontSize.md}/4)* 4",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 3) * {heading.fontSize.lg}/4)* 4",
-        "type": "number"
-      },
-      "xl": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 4) * {heading.fontSize.xl}/4)* 4",
-        "type": "number"
-      },
-      "xxl": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 5) * {heading.fontSize.xxl}/4)* 4",
-        "type": "number"
       }
     }
   },
   "bodycopy": {
-    "scale": {
-      "steps": {
-        "value": "4",
-        "type": "other"
-      }
-    },
     "fontSize": {
       "base": {
-        "value": "12",
+        "value": "14",
         "type": "other"
       },
       "peak": {
-        "value": "18",
+        "value": "24",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({bodycopy.fontSize.peak} / {bodycopy.fontSize.base}, 1 / ({bodycopy.scale.steps} - 1))",
-        "type": "other"
-      },
-      "xs": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 0)/2)* 2",
-        "type": "number"
-      },
-      "sm": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 1)/2)* 2",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 2)/2)* 2",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 3)/2)* 2",
-        "type": "number"
       }
     },
     "lineHeight": {
@@ -216,110 +66,6 @@
       "peak": {
         "value": "1.4",
         "type": "other"
-      },
-      "ratio": {
-        "value": "pow({bodycopy.lineHeight.peak} / {bodycopy.lineHeight.base}, 1 / ({bodycopy.scale.steps} - 1))",
-        "type": "other"
-      },
-      "xs": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 0) * {bodycopy.fontSize.xs}/2)* 2",
-        "type": "number"
-      },
-      "sm": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 1) * {bodycopy.fontSize.sm}/2)* 2",
-        "type": "number"
-      },
-      "md": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 2) * {bodycopy.fontSize.md}/2)* 2",
-        "type": "number"
-      },
-      "lg": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 3) * {bodycopy.fontSize.lg}/2)* 2",
-        "type": "number"
-      }
-    },
-    "paragraphSpacing": {
-      "xs": {
-        "value": "{bodycopy.lineHeight.xs}",
-        "type": "number"
-      },
-      "sm": {
-        "value": "{bodycopy.lineHeight.sm}",
-        "type": "number"
-      },
-      "md": {
-        "value": "{bodycopy.lineHeight.md}",
-        "type": "number"
-      },
-      "lg": {
-        "value": "{bodycopy.lineHeight.lg}",
-        "type": "number"
-      }
-    }
-  },
-  "layout": {
-    "heading-lockup": {
-      "lg": {
-        "head-gap": {
-          "value": "{heading.lineHeight.lg}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{heading.lineHeight.lg}/2",
-          "type": "number"
-        }
-      },
-      "md": {
-        "head-gap": {
-          "value": "{heading.lineHeight.md}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{heading.lineHeight.md}/2",
-          "type": "number"
-        }
-      },
-      "sm": {
-        "head-gap": {
-          "value": "{heading.lineHeight.md}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{heading.lineHeight.md}/2",
-          "type": "number"
-        }
-      },
-      "xs": {
-        "head-gap": {
-          "value": "{heading.lineHeight.xs}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{heading.lineHeight.xs}/2",
-          "type": "number"
-        }
-      }
-    },
-    "display-lockup": {
-      "lg": {
-        "head-gap": {
-          "value": "{display.lineHeight.lg}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{display.lineHeight.lg}/2",
-          "type": "number"
-        }
-      },
-      "md": {
-        "head-gap": {
-          "value": "{display.lineHeight.md}/3",
-          "type": "number"
-        },
-        "body-gap": {
-          "value": "{display.lineHeight.md}/2",
-          "type": "number"
-        }
       }
     }
   }
