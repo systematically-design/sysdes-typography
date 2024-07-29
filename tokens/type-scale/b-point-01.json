@@ -256,5 +256,71 @@
         "type": "number"
       }
     }
+  },
+  "layout": {
+    "heading-lockup": {
+      "lg": {
+        "head-gap": {
+          "value": "{heading.lineHeight.lg}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{heading.lineHeight.lg}/2",
+          "type": "number"
+        }
+      },
+      "md": {
+        "head-gap": {
+          "value": "{heading.lineHeight.md}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{heading.lineHeight.md}/2",
+          "type": "number"
+        }
+      },
+      "sm": {
+        "head-gap": {
+          "value": "{heading.lineHeight.md}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{heading.lineHeight.md}/2",
+          "type": "number"
+        }
+      },
+      "xs": {
+        "head-gap": {
+          "value": "{heading.lineHeight.xs}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{heading.lineHeight.xs}/2",
+          "type": "number"
+        }
+      }
+    },
+    "display-lockup": {
+      "lg": {
+        "head-gap": {
+          "value": "{display.lineHeight.lg}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{display.lineHeight.lg}/2",
+          "type": "number"
+        }
+      },
+      "md": {
+        "head-gap": {
+          "value": "{display.lineHeight.md}/3",
+          "type": "number"
+        },
+        "body-gap": {
+          "value": "{display.lineHeight.md}/2",
+          "type": "number"
+        }
+      }
+    }
   }
 }

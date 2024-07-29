@@ -2,7 +2,6 @@
   "tokenSetOrder": [
     "type-style",
     "type-scale/b-point-01",
-    "type-scale/b-point-02",
-    "Lockup-layout"
+    "type-scale/b-point-02"
   ]
 }
