@@ -10,7 +10,7 @@
         "type": "text"
       },
       "heavy": {
-        "value": "Black",
+        "value": "Bold",
         "type": "text"
       }
     }

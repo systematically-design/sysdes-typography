@@ -36,11 +36,11 @@
   "heading": {
     "fontSize": {
       "base": {
-        "value": "16",
+        "value": "14",
         "type": "other"
       },
       "peak": {
-        "value": "48",
+        "value": "32",
         "type": "other"
       },
       "ratio": {
