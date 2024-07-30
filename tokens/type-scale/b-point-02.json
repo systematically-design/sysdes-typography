@@ -14,7 +14,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({display.fontSize.peak} / {display.fontSize.base}, 1 / ({display.scale.steps} - 1))",
+        "value": "pow({display.fontSize.peak} / {display.fontSize.base}, 1 / ({display.scaleSteps} - 1))",
         "type": "other"
       }
     },
@@ -28,7 +28,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({display.lineHeight.peak} / {display.lineHeight.base}, 1 / ({display.scale.steps} - 1))",
+        "value": "pow({display.lineHeight.peak} / {display.lineHeight.base}, 1 / ({display.scaleSteps} - 1))",
         "type": "other"
       }
     }
@@ -44,7 +44,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({heading.fontSize.peak} / {heading.fontSize.base}, 1 / ({heading.scale.steps} - 1))",
+        "value": "pow({heading.fontSize.peak} / {heading.fontSize.base}, 1 / ({heading.scaleSteps} - 1))",
         "type": "other"
       }
     },
@@ -58,7 +58,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({heading.lineHeight.peak} / {heading.lineHeight.base}, 1 / ({heading.scale.steps} - 1))",
+        "value": "pow({heading.lineHeight.peak} / {heading.lineHeight.base}, 1 / ({heading.scaleSteps} - 1))",
         "type": "other"
       }
     }
@@ -74,7 +74,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({bodycopy.fontSize.peak} / {bodycopy.fontSize.base}, 1 / ({bodycopy.scale.steps} - 1))",
+        "value": "pow({bodycopy.fontSize.peak} / {bodycopy.fontSize.base}, 1 / ({bodycopy.scaleSteps} - 1))",
         "type": "other"
       }
     },
@@ -88,7 +88,7 @@
         "type": "other"
       },
       "ratio": {
-        "value": "pow({bodycopy.lineHeight.peak} / {bodycopy.lineHeight.base}, 1 / ({bodycopy.scale.steps} - 1))",
+        "value": "pow({bodycopy.lineHeight.peak} / {bodycopy.lineHeight.base}, 1 / ({bodycopy.scaleSteps} - 1))",
         "type": "other"
       }
     }
