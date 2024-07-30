@@ -65,6 +65,32 @@
         "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 4) * {display.fontSize.xxl}/4)* 4",
         "type": "number"
       }
+    },
+    "letterSpacing": {
+      "percentage": {
+        "value": "0.10",
+        "type": "other"
+      },
+      "sm": {
+        "value": "{display.fontSize.sm} *{display.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{display.fontSize.md} *{display.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{display.fontSize.lg} *{display.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "xl": {
+        "value": "{display.fontSize.xl} *{display.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "xxl": {
+        "value": "{display.fontSize.xxl} *{display.letterSpacing.percentage}",
+        "type": "number"
+      }
     }
   },
   "heading": {
@@ -133,6 +159,36 @@
         "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 5) * {heading.fontSize.xxl}/4)* 4",
         "type": "number"
       }
+    },
+    "letterSpacing": {
+      "percentage": {
+        "value": "0.1",
+        "type": "other"
+      },
+      "xs": {
+        "value": "{heading.fontSize.xs} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "sm": {
+        "value": "{heading.fontSize.sm} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{heading.fontSize.md} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{heading.fontSize.lg} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "xl": {
+        "value": "{heading.fontSize.xl} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "xxl": {
+        "value": "{heading.fontSize.xxl} *{heading.letterSpacing.percentage}",
+        "type": "number"
+      }
     }
   },
   "bodycopy": {
@@ -183,6 +239,28 @@
       },
       "lg": {
         "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 3) * {bodycopy.fontSize.lg}/2)* 2",
+        "type": "number"
+      }
+    },
+    "letterSpacing": {
+      "percentage": {
+        "value": "0",
+        "type": "other"
+      },
+      "xs": {
+        "value": "{bodycopy.fontSize.xs} *{bodycopy.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "sm": {
+        "value": "{bodycopy.fontSize.sm} *{bodycopy.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{bodycopy.fontSize.md} *{bodycopy.letterSpacing.percentage}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{bodycopy.fontSize.lg} *{bodycopy.letterSpacing.percentage}",
         "type": "number"
       }
     },
