@@ -4,7 +4,7 @@
     "type": "other"
   },
   "displayHeadingRatio": {
-    "value": "2",
+    "value": "1.2",
     "type": "other"
   },
   "display": {
@@ -20,23 +20,23 @@
         "type": "other"
       },
       "sm": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 0)/4)* 4",
+        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 0)/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 1)/4)* 4",
+        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 1)/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 2)/4)* 4",
+        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 2)/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "xl": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 3)/4)* 4",
+        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 3)/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "xxl": {
-        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 4)/4)* 4",
+        "value": "round({display.fontSize.base} * pow({display.fontSize.ratio}, 4)/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       }
     },
@@ -46,23 +46,23 @@
         "type": "other"
       },
       "sm": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 0) * {display.fontSize.sm}/4)* 4",
+        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 0) * {display.fontSize.sm}/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 1) * {display.fontSize.md}/4)* 4",
+        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 1) * {display.fontSize.md}/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 2) * {display.fontSize.lg}/4)* 4",
+        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 2) * {display.fontSize.lg}/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "xl": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 3) * {display.fontSize.xl}/4)* 4",
+        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 3) * {display.fontSize.xl}/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       },
       "xxl": {
-        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 4) * {display.fontSize.xxl}/4)* 4",
+        "value": "round({display.lineHeight.base} * pow({display.lineHeight.ratio}, 4) * {display.fontSize.xxl}/{display.roundingFactor})* {display.roundingFactor}",
         "type": "number"
       }
     },
@@ -72,25 +72,29 @@
         "type": "other"
       },
       "sm": {
-        "value": "{display.fontSize.sm} *{display.letterSpacing.percentage}",
+        "value": "round({display.fontSize.sm} *{display.letterSpacing.percentage})",
         "type": "number"
       },
       "md": {
-        "value": "{display.fontSize.md} *{display.letterSpacing.percentage}",
+        "value": "round({display.fontSize.md} *{display.letterSpacing.percentage})",
         "type": "number"
       },
       "lg": {
-        "value": "{display.fontSize.lg} *{display.letterSpacing.percentage}",
+        "value": "round({display.fontSize.lg} *{display.letterSpacing.percentage})",
         "type": "number"
       },
       "xl": {
-        "value": "{display.fontSize.xl} *{display.letterSpacing.percentage}",
+        "value": "round({display.fontSize.xl} *{display.letterSpacing.percentage})",
         "type": "number"
       },
       "xxl": {
-        "value": "{display.fontSize.xxl} *{display.letterSpacing.percentage}",
+        "value": "round({display.fontSize.xxl} *{display.letterSpacing.percentage})",
         "type": "number"
       }
+    },
+    "roundingFactor": {
+      "value": "4",
+      "type": "other"
     }
   },
   "heading": {
@@ -106,27 +110,27 @@
         "type": "other"
       },
       "xs": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 0)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 0)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "sm": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 1)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 1)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 2)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 2)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 3)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 3)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "xl": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 4)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 4)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "xxl": {
-        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 5)/4)* 4",
+        "value": "round({heading.fontSize.base} * pow({heading.fontSize.ratio}, 5)/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       }
     },
@@ -136,27 +140,27 @@
         "type": "other"
       },
       "xs": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 0) * {heading.fontSize.xs}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 0) * {heading.fontSize.xs}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "sm": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 1) * {heading.fontSize.sm}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 1) * {heading.fontSize.sm}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 2) * {heading.fontSize.md}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 2) * {heading.fontSize.md}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 3) * {heading.fontSize.lg}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 3) * {heading.fontSize.lg}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "xl": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 4) * {heading.fontSize.xl}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 4) * {heading.fontSize.xl}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       },
       "xxl": {
-        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 5) * {heading.fontSize.xxl}/4)* 4",
+        "value": "round({heading.lineHeight.base} * pow({heading.lineHeight.ratio}, 5) * {heading.fontSize.xxl}/{heading.roundingFactor})* {heading.roundingFactor}",
         "type": "number"
       }
     },
@@ -166,29 +170,33 @@
         "type": "other"
       },
       "xs": {
-        "value": "{heading.fontSize.xs} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.xs} *{heading.letterSpacing.percentage})",
         "type": "number"
       },
       "sm": {
-        "value": "{heading.fontSize.sm} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.sm} *{heading.letterSpacing.percentage})",
         "type": "number"
       },
       "md": {
-        "value": "{heading.fontSize.md} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.md} *{heading.letterSpacing.percentage})",
         "type": "number"
       },
       "lg": {
-        "value": "{heading.fontSize.lg} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.lg} *{heading.letterSpacing.percentage})",
         "type": "number"
       },
       "xl": {
-        "value": "{heading.fontSize.xl} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.xl} *{heading.letterSpacing.percentage})",
         "type": "number"
       },
       "xxl": {
-        "value": "{heading.fontSize.xxl} *{heading.letterSpacing.percentage}",
+        "value": "round({heading.fontSize.xxl} *{heading.letterSpacing.percentage})",
         "type": "number"
       }
+    },
+    "roundingFactor": {
+      "value": "4",
+      "type": "other"
     }
   },
   "bodycopy": {
@@ -204,19 +212,19 @@
         "type": "other"
       },
       "xs": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 0)/2)* 2",
+        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 0)/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "sm": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 1)/2)* 2",
+        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 1)/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 2)/2)* 2",
+        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 2)/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 3)/2)* 2",
+        "value": "round({bodycopy.fontSize.base} * pow({bodycopy.fontSize.ratio}, 3)/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       }
     },
@@ -226,19 +234,19 @@
         "type": "other"
       },
       "xs": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 0) * {bodycopy.fontSize.xs}/2)* 2",
+        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 0) * {bodycopy.fontSize.xs}/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "sm": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 1) * {bodycopy.fontSize.sm}/2)* 2",
+        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 1) * {bodycopy.fontSize.sm}/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "md": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 2) * {bodycopy.fontSize.md}/2)* 2",
+        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 2) * {bodycopy.fontSize.md}/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       },
       "lg": {
-        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 3) * {bodycopy.fontSize.lg}/2)* 2",
+        "value": "round({bodycopy.lineHeight.base} * pow({bodycopy.lineHeight.ratio}, 3) * {bodycopy.fontSize.lg}/{bodycopy.roundingFactor})* {bodycopy.roundingFactor}",
         "type": "number"
       }
     },
@@ -248,19 +256,19 @@
         "type": "other"
       },
       "xs": {
-        "value": "{bodycopy.fontSize.xs} *{bodycopy.letterSpacing.percentage}",
+        "value": "round({bodycopy.fontSize.xs} *{bodycopy.letterSpacing.percentage})",
         "type": "number"
       },
       "sm": {
-        "value": "{bodycopy.fontSize.sm} *{bodycopy.letterSpacing.percentage}",
+        "value": "round({bodycopy.fontSize.sm} *{bodycopy.letterSpacing.percentage})",
         "type": "number"
       },
       "md": {
-        "value": "{bodycopy.fontSize.md} *{bodycopy.letterSpacing.percentage}",
+        "value": "round({bodycopy.fontSize.md} *{bodycopy.letterSpacing.percentage})",
         "type": "number"
       },
       "lg": {
-        "value": "{bodycopy.fontSize.lg} *{bodycopy.letterSpacing.percentage}",
+        "value": "round({bodycopy.fontSize.lg} *{bodycopy.letterSpacing.percentage})",
         "type": "number"
       }
     },
@@ -281,69 +289,73 @@
         "value": "{bodycopy.lineHeight.lg}",
         "type": "number"
       }
+    },
+    "roundingFactor": {
+      "value": "1",
+      "type": "other"
     }
   },
   "layout": {
-    "heading-lockup": {
+    "headingLockup": {
       "lg": {
-        "head-gap": {
-          "value": "{heading.lineHeight.lg}/3",
+        "headGap": {
+          "value": "round(({heading.lineHeight.md}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{heading.lineHeight.lg}/2",
+        "bodyGap": {
+          "value": "round(({heading.lineHeight.lg}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         }
       },
       "md": {
-        "head-gap": {
-          "value": "{heading.lineHeight.md}/3",
+        "headGap": {
+          "value": "round(({heading.lineHeight.sm}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{heading.lineHeight.md}/2",
+        "bodyGap": {
+          "value": "round(({heading.lineHeight.md}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         }
       },
       "sm": {
-        "head-gap": {
-          "value": "{heading.lineHeight.md}/3",
+        "headGap": {
+          "value": "round(({heading.lineHeight.xs}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{heading.lineHeight.md}/2",
+        "bodyGap": {
+          "value": "round(({heading.lineHeight.sm}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         }
       },
       "xs": {
-        "head-gap": {
-          "value": "{heading.lineHeight.xs}/3",
+        "headGap": {
+          "value": "round(({heading.lineHeight.xs}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{heading.lineHeight.xs}/2",
+        "bodyGap": {
+          "value": "round(({heading.lineHeight.xs}/2)/{heading.roundingFactor})* {heading.roundingFactor}",
           "type": "number"
         }
       }
     },
-    "display-lockup": {
+    "displayLockup": {
       "lg": {
-        "head-gap": {
-          "value": "{display.lineHeight.lg}/3",
+        "headGap": {
+          "value": "round(({display.lineHeight.md}/2)/{display.roundingFactor})* {display.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{display.lineHeight.lg}/2",
+        "bodyGap": {
+          "value": "round(({display.lineHeight.lg}/2)/{display.roundingFactor})* {display.roundingFactor}",
           "type": "number"
         }
       },
       "md": {
-        "head-gap": {
-          "value": "{display.lineHeight.md}/3",
+        "headGap": {
+          "value": "round(({display.lineHeight.sm}/2)/{display.roundingFactor})* {display.roundingFactor}",
           "type": "number"
         },
-        "body-gap": {
-          "value": "{display.lineHeight.md}/2",
+        "bodyGap": {
+          "value": "round(({display.lineHeight.md}/2)/{display.roundingFactor})* {display.roundingFactor}",
           "type": "number"
         }
       }
