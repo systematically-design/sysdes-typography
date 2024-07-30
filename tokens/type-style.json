@@ -1,22 +1,18 @@
 {
   "display": {
     "fontFamily": {
-      "value": "{heading.fontFamily}",
+      "value": "Noto Serif",
       "type": "text"
     },
-    "weight": {
+    "fontWeight": {
       "default": {
         "value": "Regular",
         "type": "text"
       },
       "heavy": {
-        "value": "Bold",
+        "value": "Black",
         "type": "text"
       }
-    },
-    "letterSpacing": {
-      "value": "0",
-      "type": "number"
     }
   },
   "heading": {
@@ -24,7 +20,7 @@
       "value": "Noto Sans",
       "type": "text"
     },
-    "weight": {
+    "fontWeight": {
       "default": {
         "value": "Regular",
         "type": "text"
@@ -33,10 +29,6 @@
         "value": "Bold",
         "type": "text"
       }
-    },
-    "letterSpacing": {
-      "value": "0",
-      "type": "number"
     }
   },
   "bodycopy": {
@@ -44,7 +36,7 @@
       "value": "Open Sans",
       "type": "text"
     },
-    "weight": {
+    "fontWeight": {
       "default": {
         "value": "Regular",
         "type": "text"
@@ -53,10 +45,6 @@
         "value": "Bold",
         "type": "text"
       }
-    },
-    "letterSpacing": {
-      "value": "0",
-      "type": "number"
     }
   }
 }

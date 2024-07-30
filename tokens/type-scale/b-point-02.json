@@ -28,11 +28,11 @@
   "heading": {
     "fontSize": {
       "base": {
-        "value": "16",
+        "value": "18",
         "type": "other"
       },
       "peak": {
-        "value": "48",
+        "value": "72",
         "type": "other"
       }
     },
